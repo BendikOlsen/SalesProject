@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous">
+    </script>
+    <!-- google API -->
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRYGWvdGkvDT_uqyS3vyhEBfIRZ1CqR28"></script>
+    <!-- google fonts Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon" size="32x32"/>
+    <title>Sør-Invest</title>
+    
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home</a> 
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">Info</a> 
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#product">Product</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#service">Services</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#contact-text">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
+    <div class="container" id="headerlogo">
+        <div class="header" id="home">
+            <img src="images/logos/SO.png" id="logo">
+        </div>
+        <hr class=header-hr-top>
+    </div>
+<!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade" id="img1">
+        <img src="images/pics/img1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade" id="img2">
+        <img src="images/pics/img2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade" id="img3">
+        <img src="images/pics/img3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade" id="img4">
+        <img src="images/pics/img4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade" id="img5">
+        <img src="images/pics/img5.jpg" style="width:100%">
+        </div>
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev" id="minus">&#10094;</a>
+        <a class="next" id="pluss">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" id="dot1"></span> 
+        <span class="dot" id="dot2"></span> 
+        <span class="dot" id="dot3"></span> 
+        <span class="dot" id="dot4"></span>
+        <span class="dot" id="dot5"></span>
+    </div>
+
+    <!-- om oss -->
+    <div class="container-fluid text-justify" id="about">
+        <div class="row text-center">
+            <div class="col-sm-12 offset-md-2 col-md-8">
+                <h3>Information</h3>
+                <hr class=header-hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p>
+                                Pellentesque mattis aliquet justo vitae mattis. 
+                                Cras sagittis ullamcorper lectus pharetra gravida. 
+                                Suspendisse potenti. In hac habitasse platea dictumst. 
+                                Morbi vel purus blandit, efficitur sapien quis, auctor velit. 
+                                Quisque ac egestas urna, quis ultricies arcu. 
+                                Suspendisse sit amet risus nec nunc auctor mollis eget quis eros. 
+                                Nam quis sem in tortor venenatis blandit sed in nunc. 
+                                Cras a vulputate tortor, quis sodales metus. 
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p>
+                                Pellentesque mattis aliquet justo vitae mattis. 
+                                Cras sagittis ullamcorper lectus pharetra gravida. 
+                                Suspendisse potenti. In hac habitasse platea dictumst. 
+                                Morbi vel purus blandit, efficitur sapien quis, auctor velit. 
+                                Quisque ac egestas urna, quis ultricies arcu. 
+                                
+                                Cras a vulputate tortor, quis sodales metus. 
+                                
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- for sale-->
+    
+    <div class="container-fluidy" id="product">
+            <div class="col-lg-8 offset-lg-2">
+            <h3>For Sale</h3>
+            <hr class=header-hr>
+                <div class="container" id="iframe">
+                        <iframe src="https://no.wikipedia.org/wiki/Portal:Forside" 
+                        frameborder="0" scrolling="auto"></iframe>
+                </div>
+        </div> 
+    </div> 
+
+    <!-- Services -->
+    <div class="container-fluid text-justify" id="service">
+            <div class="row text-center">
+                <div class="col-sm-12 offset-md-2 col-md-8">
+                    <h3>Services</h3>
+                    <hr class=header-hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4>Option 1</h4>
+                                <p>
+                                    Pellentesque mattis aliquet justo vitae mattis. 
+                                    Cras sagittis ullamcorper lectus pharetra gravida. 
+                                    Suspendisse potenti. In hac habitasse platea dictumst. 
+                                    Morbi vel purus blandit, efficitur sapien quis, auctor velit. 
+                                    
+                                    
+                                </p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4>Option 2</h4>
+                                <p>
+                                    Quisque ac egestas urna, quis ultricies arcu. 
+                                    Suspendisse sit amet risus nec nunc auctor mollis eget quis eros. 
+                                    Nam quis sem in tortor venenatis blandit sed in nunc. 
+                                    Cras a vulputate tortor, quis sodales metus. 
+                                    
+                                </p>
+                            </div>
+        
+                            <div class="container" id="logos">
+                                <h4>Option 3</h4>
+                                <p id="samarbeid">
+                                    Quisque ac egestas urna, quis ultricies arcu. 
+                                    Suspendisse sit amet risus nec nunc auctor mollis eget quis eros. 
+                                    Nam quis sem in tortor venenatis blandit sed in nunc. 
+                                    Cras a vulputate tortor, quis sodales metus. 
+                                </p>
+                                <div class="row justify-content-md-center">
+                                    <div class="col-xm-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="logorow-top">
+                                            <img src="images/logos/dnb.jpg" id="dnblogo">
+                                            <img src="images/logos/enter.png" id="enter">
+                                            <img src="images/logos/if.png" id="if">
+                                        </div>
+                                    </div>
+                                    <div class="col-xm-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="logorow-bottom">
+                                            <img src="images/logos/santander.jpg" id="santanderlogo">
+                                            <img src="images/logos/gjensidige.png" id="gjensidigelogo"> 
+                                            <img src="images/logos/autocon.png" id="autocon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <!-- contact form -->
+    <div class="container-fluid"  id="contact-text">
+        <div class="col-sm-12 offset-md-2 col-md-8 text-center">
+            <h3>Contact Form</h3>
+            <hr class="header-hr">
+        </div>
+        <div class="row" id="contact">
+            <div class="col-md-6 offset-md-3">
+                    <form id="contact-form" method="POST" action="contact.php" role="form" accept-charset="ISO-8859-1">
+                    <div class="form-group row">
+                        <label class="col-sm-1 offset-sm-2 col-form-label"><i class="fas fa-angle-right"></i></label>
+                        <div class="col-sm-7">
+                            <input id="form_name" type="text" name="name" class="form-control"  placeholder="Name*" name="_navn" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-1 offset-sm-2 col-form-label"><i class="fas fa-angle-double-right"></i></label>
+                        <div class="col-sm-7">
+                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Surname*" required>
+                        </div>
+                        </div>
+                    <div class="form-group row">
+                        <label class="col-sm-1 offset-sm-2 col-form-label"><i class="fas fa-envelope form-icon"></i></label>
+                        <div class="col-sm-7">
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="email*" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-1 offset-sm-2 col-form-label"><i class="fas fa-phone form-icon"></i></label>
+                        <div class="col-sm-7">
+                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Phone number" pattern="[0-9]{8}" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-1 offset-sm-2 col-form-label"><i class="far fa-comment form-icon"></i></label>
+                        <div class="col-sm-7">
+                            <textarea id="form_message" name="message" class="form-control"  placeholder="Message" rows="3" maxlength="500"></textarea>
+                        </div>
+                    </div>
+                    <div class="btn btn-outline-secondary btn-block" id="checkbox">Checkbox function</div>
+                    <div id="hiddenform">
+                        <div class="form-group row">
+                            <label class="col-sm-1 offset-sm-2 col-form-label"><i class="fas fa-car"></i></label>
+                            <div class="col-sm-7">
+                                <input id="form_brand" type="text" name="brand"  class ="form-control" id="form_brand" placeholder="Option 1" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-1 offset-sm-2 col-form-label"><i class="fas fa-car"></i></label>
+                            <div class="col-sm-7">
+                                <input id="form_kilometers" type="number" name="kilometer" class ="form-control"  placeholder="Option 2" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-1 offset-sm-2 col-form-label"><i class="fas fa-car"></i></label>
+                            <div class="col-sm-7">
+                                <input id="form_regnumber" type="text" class ="form-control" name='regnumber'  placeholder="Option 3" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" id="submit" value="Send btn" class="btn btn-secondary btn-block">
+                    <h6>* Required to fill out</h6>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- map -->
+    <div class="container" id="map-text">
+        <div class="col-sm-12 offset-md-2 col-md-8">
+            <h3> Map API </h3>
+            <hr class="header-hr">
+            <div id="map">
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid" id="footer">
+        <div class="row">
+            <div class="col-md-4 offset-md-2 col-xs-3">
+                <div class="footertext"><span>Address:</span> Randomaddress 12, 1122 PB.   
+                    </div>
+            </div>
+            <div class="col-md-4 col-xs-3">
+                <div class="footertext">PB: XXXX, <span> XXXX City</span></div>
+            </div>
+            <div class="col-md-4 offset-md-2 col-xs-3">
+                <div class="footertext">Organisation Number: <span>XXX XXX XXX</span></div>
+            </div>
+            <div class="col-md-4 col-xs-3">
+                <div class="footertext">Copyright © 2018 by Olsen WedDesign.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <script defer src="contact.js"></script>
+    
+    
+</body>
