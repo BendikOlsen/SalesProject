@@ -1,13 +1,13 @@
 <?php
 
 // an email address that will be in the From field of the email.
-$from = 'post@sorinvest.no';
+$from = '';
 
 // an email address th$fields = array('firstname' => 'Name', 'lastname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message', 'brand' => 'Bilmerke', 'kilometers'=>'Kilometerstand','regnumber' => 'Registeringsnummer'); at will receive the email with the output of the form
-$sendTo = 'post@sorinvest.no';
+$sendTo = '';
 
 // subject of the email
-$subject = 'Ny melding fra sorinvest.no';
+$subject = 'New message from X';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
@@ -18,7 +18,7 @@ try
 {
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "Du har mottatt en ny beskjed fra sorinvest.no\n=============================\n";
+    $emailText = "You have received a new message from www.yoursite.com";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
